@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetario UNLP - Inicio</title>
+  <meta name="description" content="Catálogo de recetas de cocina saladas y dulces, actividad académica de Proyecto de Software - UNLP.">
+  <link rel="stylesheet" href="estilosIA1.css">
+</head>
+<body>
+
+  <a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <header class="encabezado-sitio">
+    <h1 class="encabezado-sitio__titulo">Recetario Casero</h1>
+    <p class="encabezado-sitio__eslogan">Recetas simples para cocinar en casa</p>
+  </header>
+
+  <nav class="navegacion-principal" aria-label="Navegación principal">
+    <ul class="navegacion-principal__lista">
+      <li><a class="navegacion-principal__enlace" href="index.html" aria-current="page">Inicio</a></li>
+      <li><a class="navegacion-principal__enlace" href="contacto.html">Contacto</a></li>
+      <li><a class="navegacion-principal__enlace" href="mantenimiento.html">Quién mantiene el sitio</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenido-principal" class="contenedor">
+
+    <section class="presentacion" aria-labelledby="titulo-presentacion">
+      <h2 id="titulo-presentacion" class="presentacion__titulo">Bienvenido al Recetario</h2>
+      <p class="presentacion__texto">
+        Este sitio reúne una pequeña colección de recetas caseras, sencillas de preparar,
+        organizadas en dos categorías: platos salados y postres dulces. Elegí una
+        categoría para ver las recetas disponibles y descargá cada una en formato PDF.
+      </p>
+    </section>
+
+    <section class="catalogo" aria-labelledby="titulo-catalogo">
+      <h2 id="titulo-catalogo" class="visualmente-oculto">Catálogo de recetas</h2>
+
+      <!-- Controles de selección de categoría: solo HTML y CSS -->
+      <input type="radio" id="categoria-salado" name="categoria" class="radio-categoria" checked>
+      <input type="radio" id="categoria-dulce" name="categoria" class="radio-categoria">
+
+      <div class="selector-categorias">
+        <p class="selector-categorias__titulo" id="titulo-selector">Elegí una categoría:</p>
+        <div class="selector-categorias__opciones" role="group" aria-labelledby="titulo-selector">
+          <label class="etiqueta-categoria etiqueta-salado" for="categoria-salado">Salado</label>
+          <label class="etiqueta-categoria etiqueta-dulce" for="categoria-dulce">Dulce</label>
+        </div>
+      </div>
+
+      <div class="zona-recetas">
+
+        <!-- Recetas saladas -->
+        <ul class="grupo-recetas" id="recetas-salado" aria-label="Recetas saladas">
+
+          <li class="tarjeta-receta">
+            <article>
+              <div class="tarjeta-receta__imagen-envoltorio">
+                <img class="tarjeta-receta__imagen" src="imágenes/receta1.png" alt="Plato con empanadas de carne recién horneadas">
+              </div>
+              <span class="tarjeta-receta__categoria tarjeta-receta__categoria--salado">Salado</span>
+              <h3 class="tarjeta-receta__nombre">Empanadas de carne</h3>
+              <a class="tarjeta-receta__enlace-pdf" href="recetarios/receta1.pdf">Ver receta completa (PDF)</a>
+            </article>
+          </li>
+
+          <li class="tarjeta-receta">
+            <article>
+              <div class="tarjeta-receta__imagen-envoltorio">
+                <img class="tarjeta-receta__imagen" src="imágenes/receta2.png" alt="Milanesa de pollo dorada y crocante">
+              </div>
+              <span class="tarjeta-receta__categoria tarjeta-receta__categoria--salado">Salado</span>
+              <h3 class="tarjeta-receta__nombre">Milanesa de pollo</h3>
+              <a class="tarjeta-receta__enlace-pdf" href="recetarios/receta2.pdf">Ver receta completa (PDF)</a>
+            </article>
+          </li>
+
+          <li class="tarjeta-receta">
+            <article>
+              <div class="tarjeta-receta__imagen-envoltorio">
+                <img class="tarjeta-receta__imagen" src="imágenes/receta3.png" alt="Plato de pasta con salsa de tomate y albahaca">
+              </div>
+              <span class="tarjeta-receta__categoria tarjeta-receta__categoria--salado">Salado</span>
+              <h3 class="tarjeta-receta__nombre">Pasta con salsa de tomate</h3>
+              <a class="tarjeta-receta__enlace-pdf" href="recetarios/receta3.pdf">Ver receta completa (PDF)</a>
+            </article>
+          </li>
+
+        </ul>
+
+        <!-- Recetas dulces -->
+        <ul class="grupo-recetas" id="recetas-dulce" aria-label="Recetas dulces">
+
+          <li class="tarjeta-receta">
+            <article>
+              <div class="tarjeta-receta__imagen-envoltorio">
+                <img class="tarjeta-receta__imagen" src="imágenes/receta4.png" alt="Budín de banana cortado en rodajas">
+              </div>
+              <span class="tarjeta-receta__categoria tarjeta-receta__categoria--dulce">Dulce</span>
+              <h3 class="tarjeta-receta__nombre">Budín de banana</h3>
+              <a class="tarjeta-receta__enlace-pdf" href="recetarios/receta4.pdf">Ver receta completa (PDF)</a>
+            </article>
+          </li>
+
+          <li class="tarjeta-receta">
+            <article>
+              <div class="tarjeta-receta__imagen-envoltorio">
+                <img class="tarjeta-receta__imagen" src="imágenes/receta5.png" alt="Cookies con chips de chocolate recién horneadas">
+              </div>
+              <span class="tarjeta-receta__categoria tarjeta-receta__categoria--dulce">Dulce</span>
+              <h3 class="tarjeta-receta__nombre">Cookies con chips de chocolate</h3>
+              <a class="tarjeta-receta__enlace-pdf" href="recetarios/receta5.pdf">Ver receta completa (PDF)</a>
+            </article>
+          </li>
+
+          <li class="tarjeta-receta">
+            <article>
+              <div class="tarjeta-receta__imagen-envoltorio">
+                <img class="tarjeta-receta__imagen" src="imágenes/receta6.png" alt="Porción de torta de chocolate">
+              </div>
+              <span class="tarjeta-receta__categoria tarjeta-receta__categoria--dulce">Dulce</span>
+              <h3 class="tarjeta-receta__nombre">Torta de chocolate</h3>
+              <a class="tarjeta-receta__enlace-pdf" href="recetarios/receta6.pdf">Ver receta completa (PDF)</a>
+            </article>
+          </li>
+
+        </ul>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="pie-pagina">
+    <p class="pie-pagina__nombre-sitio">Recetario Casero</p>
+    <ul class="pie-pagina__enlaces">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="mantenimiento.html">Quién mantiene el sitio</a></li>
+    </ul>
+    <p class="pie-pagina__copy">&copy; 2026 Recetario Casero - Proyecto de Software, Facultad de Informática, UNLP.</p>
+  </footer>
+
+</body>
+</html>

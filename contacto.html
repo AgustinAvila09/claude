@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recetario UNLP - Contacto</title>
+  <meta name="description" content="Información de contacto y formulario para escribirnos.">
+  <link rel="stylesheet" href="estilosIA1.css">
+</head>
+<body>
+
+  <a class="saltar-contenido" href="#contenido-principal">Saltar al contenido principal</a>
+
+  <header class="encabezado-sitio">
+    <h1 class="encabezado-sitio__titulo">Recetario Casero</h1>
+    <p class="encabezado-sitio__eslogan">Recetas simples para cocinar en casa</p>
+  </header>
+
+  <nav class="navegacion-principal" aria-label="Navegación principal">
+    <ul class="navegacion-principal__lista">
+      <li><a class="navegacion-principal__enlace" href="index.html">Inicio</a></li>
+      <li><a class="navegacion-principal__enlace" href="contacto.html" aria-current="page">Contacto</a></li>
+      <li><a class="navegacion-principal__enlace" href="mantenimiento.html">Quién mantiene el sitio</a></li>
+    </ul>
+  </nav>
+
+  <main id="contenido-principal" class="contenedor">
+
+    <section class="seccion-pagina" aria-labelledby="titulo-contacto">
+      <h2 id="titulo-contacto" class="seccion-pagina__titulo">Contacto</h2>
+      <p class="seccion-pagina__intro">
+        ¿Tenés dudas, sugerencias o querés compartir tu propia receta? Escribinos
+        completando el siguiente formulario o utilizá alguno de los datos de contacto
+        que figuran a continuación.
+      </p>
+
+      <ul class="lista-datos">
+        <li><span class="lista-datos__etiqueta">Correo electrónico:</span> contacto@recetariocasero.edu.ar</li>
+        <li><span class="lista-datos__etiqueta">Ubicación:</span> Facultad de Informática, UNLP, La Plata, Buenos Aires, Argentina</li>
+        <li><span class="lista-datos__etiqueta">Horario de atención:</span> Lunes a viernes de 9 a 18 hs</li>
+      </ul>
+
+      <!-- Formulario visual/estructural, sin procesamiento real (sitio estático) -->
+      <form class="formulario-contacto" action="#" method="get">
+        <div class="campo-formulario">
+          <label for="campo-nombre">Nombre</label>
+          <input type="text" id="campo-nombre" name="nombre" autocomplete="name" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="campo-email">Correo electrónico</label>
+          <input type="email" id="campo-email" name="email" autocomplete="email" required>
+        </div>
+
+        <div class="campo-formulario">
+          <label for="campo-mensaje">Mensaje</label>
+          <textarea id="campo-mensaje" name="mensaje" required></textarea>
+          <p class="campo-formulario__ayuda">Contanos brevemente tu consulta o comentario.</p>
+        </div>
+
+        <button type="submit" class="boton-enviar">Enviar mensaje</button>
+      </form>
+
+    </section>
+
+  </main>
+
+  <footer class="pie-pagina">
+    <p class="pie-pagina__nombre-sitio">Recetario Casero</p>
+    <ul class="pie-pagina__enlaces">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="mantenimiento.html">Quién mantiene el sitio</a></li>
+    </ul>
+    <p class="pie-pagina__copy">&copy; 2026 Recetario Casero - Proyecto de Software, Facultad de Informática, UNLP.</p>
+  </footer>
+
+</body>
+</html>
